@@ -65,7 +65,7 @@
         .dice{
             margin:30px;
             font-size: 60px;
-            color:white;
+            color:red;
             z-index: 10;
         }
         .btnm{
@@ -84,7 +84,7 @@
             display: grid;
             grid-template-columns: repeat(3,25px);
             gap:5px;
-            border:3px solid red;
+            border:3px solid white;
             z-index: 0;
             padding: 10px;
             border-radius: 15px;
@@ -92,7 +92,7 @@
         .dot{
             width:25px;
             height:25px;
-            background-color: red;
+            background-color: white;
             border-radius: 50%;
             opacity: 0;
         }
@@ -128,7 +128,7 @@
 </head>
 <body>
     <div class="flex-container">
-        <div class="btnm" onclick="hide()">Hide/Show Number</div>
+        <div class="btnm" style="color:red" onclick="hide()">Hide/Show Number</div>
         <div class="btnm" onclick="randomNumberDisplay()">Roll the Dice</div>
         <div id="centerDice">
             <div class="dice fillD">Dice</div>
